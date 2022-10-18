@@ -1,6 +1,8 @@
 <?php
-    abstract class Model{
+    abstract class Model implements ObserverInterface{
+        
         protected $records = array();
+        
         public function getAll():array{
 
         }

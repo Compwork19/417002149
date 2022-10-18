@@ -2,6 +2,7 @@
     abstract class AbstractController{
         protected $model = null;
         protected $view = null;
+        
         protected function setModel(Model $m){
             $this->model = $m;
         }
@@ -11,7 +12,7 @@
         }
 
         public function run(){
-
+            
         }
     }
 ?>
