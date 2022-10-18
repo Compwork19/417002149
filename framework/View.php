@@ -1,8 +1,9 @@
 <?php
 
-    class view{
+    class view implements ObserverInterface{
         private $tpl = '';
         private $val = [];
+        
         public function setTemplate($filename){
             if(preg_match('/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/',$filename) == 0 ){
                 trigger_error('Invalid filename', E_USER_ERROR);
